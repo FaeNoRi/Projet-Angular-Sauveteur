@@ -1,6 +1,6 @@
 # Auteur
 
-Projet réalisé par : VANHAECKE Louis - LPDIM APP
+Par Deloison Clément
 
 # TPangular
 
