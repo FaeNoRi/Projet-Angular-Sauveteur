@@ -1,0 +1,18 @@
+<h1>Plus d'informations sur {{ Sauveteur.Sauveteur_name }}</h1>
+
+<div *ngIf="Sauveteur">
+  <div class="card-content" >
+      <mat-card class="card-Sauveteur">
+      <mat-card-content>
+          <h4><b>Nom : </b>{{ Sauveteur.Sauveteur_name }}</h4>
+          <h4><b>Metier : </b>{{ Sauveteur.Sauveteur_role }}</h4>
+          <h4><b>Status : </b>{{ Sauveteur.Sauveteur_status}}</h4>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="addSauveteurs(Sauveteur)">
+          <mat-icon>label_important</mat-icon> Suivre ce sauveteur
+        </button>
+      </mat-card-actions>
+      </mat-card>
+  </div>
+</div>    

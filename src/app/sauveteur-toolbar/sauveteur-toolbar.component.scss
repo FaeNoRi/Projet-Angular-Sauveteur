@@ -1,0 +1,15 @@
+mat-toolbar {
+    background-color:#0d76d8;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+span {
+    margin-left: 15px;
+}
+
+#btn-home:hover {
+    cursor: pointer;
+}

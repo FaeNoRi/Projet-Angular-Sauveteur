@@ -1,0 +1,27 @@
+<h1>Listes des Sauveteurs</h1>
+
+<div>
+    <button class="Sauveteur-TopButton" mat-raised-button color="primary" routerLink="/infos">
+        A propos de cette liste
+    </button>
+
+    <button class="Sauveteur-TopButton" mat-stroked-button color="primary" (click)="tips()"> <mat-icon>monetization_on</mat-icon> Soutenir nos sauveteurs ! </button>
+</div>
+
+<br><mat-divider></mat-divider><br>
+
+<div class="card-container" *ngFor="let Sauveteur of Sauveteurs; index as SauveteurID">
+    <div class="card-content" >
+        <mat-card class="card-Sauveteur">
+        <mat-card-header>
+            <mat-card-title>{{ Sauveteur.Sauveteur_name }}</mat-card-title>
+            <mat-card-subtitle>Status : {{ Sauveteur.Sauveteur_status }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-actions>
+            <button class="Sauveteur-button" mat-stroked-button [routerLink]="['/Sauveteurs', SauveteurID]" matTooltip="Informations sur le sauveteur">Informations</button>
+            <app-Sauveteur-alerts class="Sauveteur-button" [Sauveteur]="Sauveteur"(notify)="onNotify()"></app-Sauveteur-alerts>
+        </mat-card-actions>
+        </mat-card>
+    </div>
+</div> 
+

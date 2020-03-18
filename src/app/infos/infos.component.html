@@ -1,0 +1,13 @@
+<h1>A propos de la liste des sauveteurs du Dunkerquois</h1>
+
+<div class="infos-item" *ngFor="let infos of Infos | async">
+  <ul style="list-style: none">
+    <li><b>Intervalle Historique : </b>{{ infos.Sauveteur_date }}</li>
+    <li><b>Origine des sauveteurs : </b>{{ infos.Sauveteur_pays}}</li>
+    <li><b>Ports d'attaches des sauveteurs: </b>{{ infos.Sauveteur_port}}</li>
+    <br>
+    <li>Cette liste est le fruit d'un long travail de recherche, via les archives et les musées.</li>
+    <li>Elle ne contient que des sauveteurs, aucun sauvé n'y apparait.</li>
+  </ul>
+
+</div>

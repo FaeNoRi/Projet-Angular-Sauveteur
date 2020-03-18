@@ -1,0 +1,13 @@
+<mat-toolbar>
+    <button [routerLink]="['']" mat-icon-button aria-label="Example icon-button with a heart icon">
+        <mat-icon>home</mat-icon> Retour à la liste
+    </button>
+    <span>Liste des sauveteurs du Dunkerquois</span>
+
+    <button  mat-raised-button
+        style="right: 0px;"
+        [routerLink]="['/follow']" 
+        class="button fancy-button"><i 
+        class="material-icons">label_important</i> Suivis
+    </button>
+</mat-toolbar>

@@ -1,0 +1,5 @@
+<p *ngIf="Sauveteur.Sauveteur_deces > 0">
+    <button class="sauveteur-button" mat-stroked-button color="warn" (click)="notify.emit()">
+        Ce sauveteur est malheuresement décédé ...
+    </button>
+</p>

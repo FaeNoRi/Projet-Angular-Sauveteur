@@ -1,0 +1,38 @@
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    display: inline-block;
+}
+
+.card-content {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.card-Sauveteur {
+    max-width: 400px;
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+  
+.Sauveteur-header-image-1 {
+    background-size: cover;
+}
+
+.Sauveteur-header-image-2 {
+    background-size: cover;
+}
+
+.Sauveteur-button {
+    width: 26rem;
+}
+
+.Sauveteur-TopButton{
+    margin-right: 15px;
+}
+
+.mat-card-actions .mat-stroked-button {
+    margin: 0 0px;
+    margin-top: 3px;
+}
